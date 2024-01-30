@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)https://www.keystonesecurity.net/ -->
-<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+		body {
+			transition: opacity ease-in 0.2s;
+		}
+
+		.company-container {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: row;
+
+		}
+
+		@media screen and (max-width:768px) {
+			.company-container {
+				flex-direction: column;
+				gap: 20px;
+			}
+		}
+
+		.company-image {
+			filter: grayscale(100%);
+		}
+
+		.company-image:hover {
+			filter: grayscale(0%);
+			scale: 1.1;
+			transition-duration: 0.3s;
+		}
 body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
 </style>
 		
@@ -302,20 +334,16 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 				</section>
 				<section class="module-small bg-dark">
 					<div class="container">
-						<div class="row">
-							<div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
-								<div class="callout-text font-alt">
-									<h3 class="callout-title">Want to see more works?</h3>
-									<p>We are always open to interesting projects.</p>
-								</div>
-							</div>
-							<!-- <div class="col-sm-6 col-md-4 col-lg-2">
-								<div class="callout-btn-box">
-									<a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html"
-										>Lets view portfolio</a
-									>
-								</div> -->
+					<div class="company-container">
+						<div class="company-image text-center flex-grow">
+							<img src=" ESA-Logo.webp" alt="ESA company logo" />
 						</div>
+							<div class="company-image text-center flex-grow">
+								<img src="SIA_logo_white.png" alt="SIA company logo" />
+							</div>
+							<div class="company-image text-center flex-grow">
+								<img src="TMA-logo.jpeg" alt="TMA company logo" />
+							</div>
 					</div>
 				</section>
 
